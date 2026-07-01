@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Foyzul Hassan — Post Supervisor & Content Creator</title>
+  <meta name="description" content="Portfolio of SM Foyzul Hassan — Post Supervisor & Content Creator with 18+ years in video production, post-production, and AI-enhanced content strategy." />
+  <meta name="theme-color" content="#09090b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SM Foyzul Hassan — Post Supervisor & Content Creator" />
+  <meta property="og:description" content="Visual Content Lead skilled in creating high-quality video and digital content. Leveraging AI-enhanced techniques and cross-platform repurposing." />
+  <meta property="og:image" content="./assets/photo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SM Foyzul Hassan — Post Supervisor & Content Creator" />
+  <meta name="twitter:description" content="Visual Content Lead skilled in creating high-quality video and digital content." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#09090b;color:#fff;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+    ::selection{background:rgba(99,102,241,.3);color:#c7d2fe}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:#09090b}
+    ::-webkit-scrollbar-thumb{background:#27272a;border-radius:3px}
+    ::-webkit-scrollbar-thumb:hover{background:#3f3f46}
+    .gradient-text{background:linear-gradient(to right,#a5b4fc,#fff,#a1a1aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .glass{background:rgba(255,255,255,.03);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06)}
+    .glass-hover:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
+    .grid-bg{background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(circle at center,black 30%,transparent 70%);-webkit-mask-image:radial-gradient(circle at center,black 30%,transparent 70%)}
+    .timeline-line{background:linear-gradient(to bottom,rgba(99,102,241,.5),rgba(99,102,241,.05))}
+    .fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s ease-out,transform .7s ease-out}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    .skill-tag{transition:all .2s ease}
+    .skill-tag:hover{background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.4);color:#a5b4fc;transform:translateY(-2px)}
+    .nav-link{position:relative;transition:color .3s ease}
+    .nav-link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:#6366f1;transition:width .3s ease}
+    .nav-link:hover::after,.nav-link.active::after{width:100%}
+    @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+    .pulse-dot{animation:pulse-dot 2s cubic-bezier(.4,0,.6,1) infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .float-anim{animation:float 6s ease-in-out infinite}
+    .showreel-wrapper{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:#000}
+    .showreel-wrapper video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+    .play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.4);cursor:pointer;transition:background .3s ease}
+    .play-overlay:hover{background:rgba(0,0,0,.25)}
+    .play-overlay.hidden{display:none}
+    .play-btn-circle{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;transition:all .3s ease}
+    .play-overlay:hover .play-btn-circle{background:rgba(255,255,255,.25);transform:scale(1.08)}
+    .portfolio-card{position:relative;overflow:hidden;border-radius:16px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);transition:all .4s ease}
+    .portfolio-card:hover{border-color:rgba(99,102,241,.3);transform:translateY(-4px);box-shadow:0 20px 40px -12px rgba(0,0,0,.5)}
+    .portfolio-card img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .6s ease,filter .4s ease;filter:brightness(.85) saturate(.9)}
+    .portfolio-card:hover img{transform:scale(1.06);filter:brightness(1) saturate(1)}
+    .portfolio-card .card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.2) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:background .4s ease}
+    .portfolio-card:hover .card-overlay{background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.3) 60%,transparent 100%)}
+    .portfolio-card .card-arrow{opacity:0;transform:translateX(-8px);transition:all .3s ease}
+    .portfolio-card:hover .card-arrow{opacity:1;transform:translateX(0)}
+    .photo-circle{width:36px;height:36px;border-radius:50%;overflow:hidden;border:2px solid rgba(99,102,241,.4);flex-shrink:0}
+    .photo-circle img{width:100%;height:100%;object-fit:cover}
+    .photo-circle-lg{width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid rgba(99,102,241,.4);box-shadow:0 0 40px -10px rgba(99,102,241,.3);flex-shrink:0}
+    .photo-circle-lg img{width:100%;height:100%;object-fit:cover}
+    .wa-btn{background:#25D366;color:#fff}
+    .wa-btn:hover{background:#1ebe5a}
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 h-16 border-b border-white/5" style="backdrop-filter:blur(12px);background:rgba(9,9,11,.8)">
+    <div class="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="photo-circle">
+          <img src="./assets/photo.png" alt="Foyzul Hassan" />
+        </div>
+        <span class="text-sm font-medium tracking-tight hidden sm:block">Foyzul Hassan</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">About</a>
+        <a href="#experience" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">Experience</a>
+        <a href="#skills" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">Skills</a>
+        <a href="#work" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">Work</a>
+        <a href="#training" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">Training</a>
+        <a href="#contact" class="nav-link text-xs font-medium text-zinc-400 hover:text-white uppercase tracking-widest">Contact</a>
+      </div>
+      <button id="mobile-toggle" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" aria-label="Toggle menu">
+        <i data-lucide="menu" class="w-5 h-5 text-zinc-400"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-white/5" style="backdrop-filter:blur(12px);background:rgba(9,9,11,.95)">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#about" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">About</a>
+        <a href="#experience" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">Experience</a>
+        <a href="#skills" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">Skills</a>
+        <a href="#work" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">Work</a>
+        <a href="#training" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">Training</a>
+        <a href="#contact" class="mobile-link text-sm text-zinc-400 hover:text-white py-2 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/8 rounded-full blur-[120px]"></div>
+    <div class="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] float-anim"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div class="fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
+        <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Available for Projects</span>
+      </div>
+      <div class="fade-up flex flex-col items-center mb-6">
+        <div class="photo-circle-lg mb-6">
+          <img src="./assets/photo.png" alt="SM Foyzul Hassan" />
+        </div>
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1]">
+          <span class="gradient-text">SM Foyzul</span><br />
+          <span class="text-white">Hassan</span>
+        </h1>
+      </div>
+      <p class="fade-up text-lg sm:text-xl text-zinc-400 font-light mb-4 tracking-tight">Post Supervisor & Content Creator</p>
+      <p class="fade-up max-w-2xl mx-auto text-sm sm:text-base text-zinc-500 font-light leading-relaxed mb-10">
+        Visual Content Lead skilled in creating high-quality video and digital content.
+        Leveraging AI-enhanced techniques and cross-platform repurposing to deliver
+        consistent, brand-aligned materials that enhance engagement and results.
+      </p>
+      <div class="fade-up flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="#contact" class="group inline-flex items-center gap-2 px-8 py-3.5 bg-white text-zinc-900 text-sm font-medium rounded-xl hover:bg-zinc-200 transition-all duration-200" style="box-shadow:0 1px 2px 0 rgb(0 0 0/.05)">
+          Get in Touch
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+        <a href="#work" class="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium text-zinc-300 rounded-xl border border-white/10 hover:bg-white/5 hover:border-white/20 transition-all duration-200">View My Work</a>
+      </div>
+      <div class="fade-up max-w-3xl mx-auto">
+        <div class="showreel-wrapper">
+          <video id="showreel-video" playsinline preload="metadata" poster="https://picsum.photos/seed/showreel-poster/1280/720.jpg">
+            <source src="https://dl.dropboxusercontent.com/scl/fi/a46a42rms8uz4dtuw4nqk/Showreel.mp4?rlkey=9i07ukmj7ly4dytzdxq257m80&st=yzsw31ib&dl=1" type="video/mp4" />
+          </video>
+          <div id="play-overlay" class="play-overlay">
+            <div class="play-btn-circle">
+              <i data-lucide="play" class="w-7 h-7 text-white ml-1" fill="white"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-[11px] text-zinc-600 uppercase tracking-widest font-mono mt-3">Showreel 2025</p>
+      </div>
+      <div class="fade-up mt-14 grid grid-cols-3 gap-8 max-w-md mx-auto">
+        <div>
+          <div class="text-2xl sm:text-3xl font-semibold text-white">18+</div>
+          <div class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Years Exp.</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-semibold text-white">6</div>
+          <div class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Certifications</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-semibold text-white">12+</div>
+          <div class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Core Skills</div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+      <span class="text-[10px] uppercase tracking-[.2em] text-zinc-500">Scroll</span>
+      <div class="w-px h-8 bg-gradient-to-b from-zinc-500 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="relative py-24 sm:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+        <div class="lg:col-span-2 fade-up">
+          <span class="text-xs font-medium text-indigo-400 uppercase tracking-widest font-mono">01 — About</span>
+          <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-4 mb-6">Bridging <span class="text-indigo-400">creative</span> vision<br class="hidden sm:block" /> & digital strategy</h2>
+          <div class="w-12 h-px bg-gradient-to-r from-indigo-500 to-transparent"></div>
+        </div>
+        <div class="lg:col-span-3 fade-up">
+          <div class="glass rounded-2xl p-8">
+            <p class="text-zinc-400 font-light leading-relaxed mb-6">With nearly two decades in the visual content industry, I've evolved from editing dramas and documentaries to leading post-production for commercials and films — now integrating AI-powered content creation into every workflow.</p>
+            <p class="text-zinc-400 font-light leading-relaxed mb-8">My approach combines deep technical expertise in video production with modern digital marketing strategy. I don't just create content — I research audiences, develop strategies, and optimize for platforms to ensure every piece of content drives measurable results.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="video" class="w-4 h-4 text-indigo-400"></i></div>
+                <div><div class="text-sm font-medium text-white">Video Production</div><div class="text-xs text-zinc-500 mt-0.5">From scripting to final delivery</div></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="brain" class="w-4 h-4 text-indigo-400"></i></div>
+                <div><div class="text-sm font-medium text-white">AI-Enhanced Workflows</div><div class="text-xs text-zinc-500 mt-0.5">Generative AI tools & prompting</div></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="bar-chart-3" class="w-4 h-4 text-indigo-400"></i></div>
+                <div><div class="text-sm font-medium text-white">Analytics & SEO</div><div class="text-xs text-zinc-500 mt-0.5">Data-driven content optimization</div></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="repeat" class="w-4 h-4 text-indigo-400"></i></div>
+                <div><div class="text-sm font-medium text-white">Content Repurposing</div><div class="text-xs text-zinc-500 mt-0.5">Cross-platform adaptation</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="relative py-24 sm:py-32">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-xs font-medium text-indigo-400 uppercase tracking-widest font-mono">02 — Experience</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-4">Professional Journey</h2>
+        <p class="text-zinc-500 font-light mt-3 max-w-lg mx-auto text-sm">Nearly two decades of progressive experience in video production, post-production supervision, and content strategy.</p>
+      </div>
+      <div class="relative max-w-3xl mx-auto">
+        <div class="absolute left-0 sm:left-8 top-0 bottom-0 w-px timeline-line"></div>
+
+        <div class="fade-up relative pl-8 sm:pl-20 pb-12">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-indigo-500 border-2 border-zinc-900 shadow-[0_0_10px_rgba(99,102,241,.5)]"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="font-mono text-[11px] text-indigo-400 uppercase tracking-wider">Nov 2024 — Jan 2026</span>
+              <span class="text-[10px] text-emerald-500/80 uppercase tracking-wider font-mono flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 pulse-dot"></span>Current</span>
+            </div>
+            <h3 class="text-lg font-medium text-white mb-1">Post Supervisor & Content Creator</h3>
+            <p class="text-sm text-indigo-400/80 mb-3">Studio Yellow Something</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-indigo-500/60 flex-shrink-0 mt-1"></i>Oversaw the execution of post-production tasks for commercials and films.</li>
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-indigo-500/60 flex-shrink-0 mt-1"></i>Strategize, research, and produce video contents.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-up relative pl-8 sm:pl-20 pb-12">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-zinc-600 border-2 border-zinc-900"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-wider">Aug 2021 — Apr 2022</span>
+            <h3 class="text-lg font-medium text-white mb-1 mt-3">Post Producer</h3>
+            <p class="text-sm text-zinc-500 mb-3">Colorspace</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Managed post-production processes ensuring alignment with creative direction and goals.</li>
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Facilitated strong communication between clients and creative teams to meet project objectives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-up relative pl-8 sm:pl-20 pb-12">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-zinc-600 border-2 border-zinc-900"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-wider">Jan — Apr 2019</span>
+            <h3 class="text-lg font-medium text-white mb-1 mt-3">Video Content Producer</h3>
+            <p class="text-sm text-zinc-500 mb-3">7TEEN Digital (7TOON)</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Developed and produced video content for various brands, working closely with content directors.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-up relative pl-8 sm:pl-20 pb-12">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-zinc-600 border-2 border-zinc-900"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-wider">Feb 2017 — Jan 2018</span>
+            <h3 class="text-lg font-medium text-white mb-1 mt-3">Assistant Director (Post-Production)</h3>
+            <p class="text-sm text-zinc-500 mb-3">DOPE Productions (FLIKON)</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Maintained the integrity of storylines and director's vision through precise editing workflows.</li>
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Constructed rough cuts to assist final edit stages.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-up relative pl-8 sm:pl-20 pb-12">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-zinc-600 border-2 border-zinc-900"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-wider">May 2015 — Feb 2017</span>
+            <h3 class="text-lg font-medium text-white mb-1 mt-3">Assistant Director</h3>
+            <p class="text-sm text-zinc-500 mb-3">Boatman Films & Film Box</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Assisted director throughout production to ensure quality and timely delivery of projects.</li>
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Coordinated production meetings and updates to maintain project timelines and objectives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-up relative pl-8 sm:pl-20">
+          <div class="absolute left-0 sm:left-8 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full bg-zinc-700 border-2 border-zinc-900"></div>
+          <div class="glass glass-hover rounded-2xl p-6 transition-all duration-300">
+            <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-wider">Feb 2006 — Apr 2014</span>
+            <h3 class="text-lg font-medium text-white mb-1 mt-3">Video Editor</h3>
+            <p class="text-sm text-zinc-500 mb-3">Freelance</p>
+            <ul class="space-y-2">
+              <li class="text-sm text-zinc-400 font-light leading-relaxed flex items-start gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-zinc-600 flex-shrink-0 mt-1"></i>Compiled and edited various formats including dramas, documentaries, and short films, ensuring high-quality final outputs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="relative py-24 sm:py-32">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-xs font-medium text-indigo-400 uppercase tracking-widest font-mono">03 — Skills</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-4">Core Competencies</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="fade-up glass rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="zap" class="w-5 h-5 text-indigo-400"></i></div>
+            <h3 class="text-lg font-medium text-white">Technical Skills</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Video Content Strategy</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Audience Research & Insights</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Content Brief & Scripting</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">AI for Content Creation</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Prompting</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Generative AI Tools</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Video Editing</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Post-Production Supervision</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Video SEO</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">YouTube Optimization</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Content Repurposing</span>
+            <span class="skill-tag px-3.5 py-2 rounded-lg text-xs font-medium text-zinc-300 bg-white/5 border border-white/8 cursor-default">Video Analytics & Reporting</span>
+          </div>
+        </div>
+        <div class="fade-up glass rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center"><i data-lucide="users" class="w-5 h-5 text-purple-400"></i></div>
+            <h3 class="text-lg font-medium text-white">Soft Skills</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white/3 transition-colors"><div class="w-2 h-2 rounded-full bg-purple-400/60 group-hover:bg-purple-400 transition-colors"></div><span class="text-sm text-zinc-300 font-light">Analytical Thinking</span></div>
+            <div class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white/3 transition-colors"><div class="w-2 h-2 rounded-full bg-purple-400/60 group-hover:bg-purple-400 transition-colors"></div><span class="text-sm text-zinc-300 font-light">Collaborative Teamwork</span></div>
+            <div class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white/3 transition-colors"><div class="w-2 h-2 rounded-full bg-purple-400/60 group-hover:bg-purple-400 transition-colors"></div><span class="text-sm text-zinc-300 font-light">Creative (Lateral) Thinking</span></div>
+            <div class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white/3 transition-colors"><div class="w-2 h-2 rounded-full bg-purple-400/60 group-hover:bg-purple-400 transition-colors"></div><span class="text-sm text-zinc-300 font-light">Communication Skills</span></div>
+            <div class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white/3 transition-colors"><div class="w-2 h-2 rounded-full bg-purple-400/60 group-hover:bg-purple-400 transition-colors"></div><span class="text-sm text-zinc-300 font-light">Creative Problem Solving</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up mt-12 max-w-4xl mx-auto glass rounded-2xl p-8">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center"><i data-lucide="briefcase" class="w-5 h-5 text-emerald-400"></i></div>
+          <h3 class="text-lg font-medium text-white">Work Profile</h3>
+        </div>
+        <p class="text-sm text-zinc-400 font-light leading-relaxed">Visual Content Lead skilled in creating high-quality video and digital content for various audiences. Utilizes AI-enhanced techniques and cross-platform repurposing to deliver consistent, brand-aligned materials that enhance engagement and results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PORTFOLIO -->
+  <section id="work" class="relative py-24 sm:py-32">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+    <div class="absolute top-1/3 right-0 w-[400px] h-[300px] bg-indigo-500/5 rounded-full blur-[120px]"></div>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-xs font-medium text-indigo-400 uppercase tracking-widest font-mono">04 — Work</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-4">Selected Projects</h2>
+        <p class="text-zinc-500 font-light mt-3 max-w-lg mx-auto text-sm">A curated selection of commercials, brand content, and film projects from my production portfolio.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="fade-up sm:col-span-2 portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/commercial-film/960/600.jpg" alt="Commercial Films" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">Studio Yellow Something</span>
+              <h3 class="text-lg font-medium text-white mb-1">Commercial Films & TVCs</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">Post-production supervision for high-end television commercials and brand films.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View Project</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="fade-up portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/brand-content/480/300.jpg" alt="Brand Video Content" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">7TEEN Digital</span>
+              <h3 class="text-base font-medium text-white mb-1">Brand Video Content</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">Strategic video content production for diverse brands.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="fade-up portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/post-production-color/480/300.jpg" alt="Post-Production Work" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">Colorspace</span>
+              <h3 class="text-base font-medium text-white mb-1">Post-Production</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">End-to-end post-production management and creative direction.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="fade-up portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/film-editing-drama/480/300.jpg" alt="Film & Drama Editing" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">DOPE Productions</span>
+              <h3 class="text-base font-medium text-white mb-1">Film & Drama Editing</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">Precise editing workflows preserving director's creative vision.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="fade-up portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/documentary-film/480/300.jpg" alt="Documentary Projects" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">Freelance</span>
+              <h3 class="text-base font-medium text-white mb-1">Documentary Projects</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">Long-form documentary editing with narrative precision.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+        <div class="fade-up portfolio-card group">
+          <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="https://picsum.photos/seed/ai-content-digital/480/300.jpg" alt="AI-Enhanced Content" loading="lazy" />
+            <div class="card-overlay">
+              <span class="font-mono text-[10px] text-indigo-400 uppercase tracking-widest mb-2">Recent Work</span>
+              <h3 class="text-base font-medium text-white mb-1">AI-Enhanced Content</h3>
+              <p class="text-xs text-zinc-400 font-light mb-3">Modern content creation leveraging generative AI tools and techniques.</p>
+              <div class="flex items-center gap-2 text-xs text-indigo-400 font-medium"><span>View</span><i data-lucide="arrow-right" class="w-3.5 h-3.5 card-arrow"></i></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fade-up text-center mt-12">
+        <a href="https://www.dropbox.com/scl/fo/io850h6rahdfmpl7aw2ti/APA0ZJpCMqEo9PTPl9Ns16s?rlkey=fws49pih54gwa0xbfdvwvldn0&st=r9mva92s&dl=0" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium text-zinc-300 rounded-xl border border-white/10 hover:bg-white/5 hover:border-white/20 transition-all duration-200">View Full Portfolio <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING & EDUCATION & CONTACT -->
+  <section id="training" class="relative py-24 sm:py-32">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-indigo-500/5 rounded-full blur-[120px]"></div>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-xs font-medium text-indigo-400 uppercase tracking-widest font-mono">05 — Credentials</span>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-4">Training & Education</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="fade-up glass rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="award" class="w-5 h-5 text-indigo-400"></i></div>
+            <h3 class="text-lg font-medium text-white">Professional Training</h3>
+          </div>
+          <div class="space-y-5">
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Certified Intelligent Marketing Strategist</h4><p class="text-xs text-zinc-500 mt-1">Idean Consulting · Mentor: Mark Anupom Mollick</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">Oct 2025</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Foundations of Digital Marketing & E-Commerce</h4><p class="text-xs text-zinc-500 mt-1">Google · Coursera</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">May 2023</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">AI for Marketers</h4><p class="text-xs text-zinc-500 mt-1">HubSpot Academy</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">Dec 2023</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Video Marketing</h4><p class="text-xs text-zinc-500 mt-1">HubSpot Academy</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">May 2023</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Content Marketing</h4><p class="text-xs text-zinc-500 mt-1">HubSpot Academy</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">May 2023</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Professional Digital Content Marketing</h4><p class="text-xs text-zinc-500 mt-1">Bangladesh Hi-Tech Park Authority / SEBPO</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">Mar 2019</span>
+              </div>
+            </div>
+            <div class="group p-3 rounded-xl hover:bg-white/3 transition-colors">
+              <div class="flex items-start justify-between gap-3">
+                <div><h4 class="text-sm font-medium text-white group-hover:text-indigo-300 transition-colors">Professional Motion Picture Editing</h4><p class="text-xs text-zinc-500 mt-1">NIFT · Diploma</p></div>
+                <span class="font-mono text-[10px] text-zinc-600 uppercase tracking-wider flex-shrink-0 mt-0.5">Jan 2006</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up space-y-8">
+          <div class="glass rounded-2xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center"><i data-lucide="graduation-cap" class="w-5 h-5 text-purple-400"></i></div>
+              <h3 class="text-lg font-medium text-white">Education</h3>
+            </div>
+            <div class="group p-4 rounded-xl bg-white/3 border border-white/5">
+              <h4 class="text-sm font-medium text-white">Bachelor of Commerce</h4>
+              <p class="text-xs text-zinc-500 mt-1">Major in Management · CGPA 2.9</p>
+              <p class="text-xs text-zinc-600 mt-1">National University of Bangladesh</p>
+              <span class="inline-block mt-3 font-mono text-[10px] text-zinc-600 uppercase tracking-wider">Graduated 2011</span>
+            </div>
+          </div>
+
+          <!-- CONTACT CARD -->
+          <div id="contact" class="glass rounded-2xl p-8 lg:sticky lg:top-24">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center"><i data-lucide="mail" class="w-5 h-5 text-emerald-400"></i></div>
+              <h3 class="text-lg font-medium text-white">Get in Touch</h3>
+            </div>
+            <div class="space-y-4">
+              <a href="mailto:to.foyzul@gmail.com" class="group flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center group-hover:border-indigo-500/30 transition-colors"><i data-lucide="mail" class="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 transition-colors"></i></div>
+                <div><div class="text-xs text-zinc-600 uppercase tracking-wider">Email</div><div class="text-sm text-zinc-300 group-hover:text-white transition-colors">to.foyzul@gmail.com</div></div>
+              </a>
+              <a href="tel:+8801839308123" class="group flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center group-hover:border-indigo-500/30 transition-colors"><i data-lucide="phone" class="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 transition-colors"></i></div>
+                <div><div class="text-xs text-zinc-600 uppercase tracking-wider">Phone</div><div class="text-sm text-zinc-300 group-hover:text-white transition-colors">+880 1839 308 123</div></div>
+              </a>
+              <a href="https://linkedin.com/in/smfoyzulhassan" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center group-hover:border-indigo-500/30 transition-colors"><i data-lucide="linkedin" class="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 transition-colors"></i></div>
+                <div><div class="text-xs text-zinc-600 uppercase tracking-wider">LinkedIn</div><div class="text-sm text-zinc-300 group-hover:text-white transition-colors">/in/smfoyzulhassan</div></div>
+              </a>
+              <div class="flex items-center gap-3 p-3 rounded-xl">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center"><i data-lucide="map-pin" class="w-4 h-4 text-zinc-500"></i></div>
+                <div><div class="text-xs text-zinc-600 uppercase tracking-wider">Location</div><div class="text-sm text-zinc-300">Mirpur-14, Dhaka 1206</div></div>
+              </div>
+            </div>
+
+            <!-- WHATSAPP BUTTON -->
+            <a href="https://wa.me/8801839308123" target="_blank" rel="noopener noreferrer" class="mt-6 w-full inline-flex items-center justify-center gap-2.5 px-6 py-3 wa-btn text-sm font-medium rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-green-500/20">
+              <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Send Message
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative py-12 border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="photo-circle" style="width:28px;height:28px;border-width:1.5px">
+            <img src="./assets/photo.png" alt="FH" />
+          </div>
+          <span class="text-sm text-zinc-600">SM Foyzul Hassan</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://linkedin.com/in/smfoyzulhassan" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-zinc-300 transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          <a href="mailto:to.foyzul@gmail.com" class="text-zinc-600 hover:text-zinc-300 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+          <a href="https://wa.me/8801839308123" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-emerald-400 transition-colors">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-zinc-700">&copy; 2025 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    lucide.createIcons();
+    const mobileToggle=document.getElementById('mobile-toggle'),mobileMenu=document.getElementById('mobile-menu');
+    let menuOpen=false;
+    mobileToggle.addEventListener('click',()=>{menuOpen=!menuOpen;mobileMenu.classList.toggle('hidden',!menuOpen)});
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>{menuOpen=false;mobileMenu.classList.add('hidden')}));
+    const video=document.getElementById('showreel-video'),playOverlay=document.getElementById('play-overlay');
+    playOverlay.addEventListener('click',()=>{video.play();playOverlay.classList.add('hidden')});
+    video.addEventListener('click',()=>{if(video.paused){video.play();playOverlay.classList.add('hidden')}else{video.pause();playOverlay.classList.remove('hidden')}});
+    video.addEventListener('ended',()=>playOverlay.classList.remove('hidden'));
+    video.addEventListener('pause',()=>playOverlay.classList.remove('hidden'));
+    const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const sibs=e.target.parentElement.querySelectorAll('.fade-up');let d=0;sibs.forEach((s,i)=>{if(s===e.target)d=i*80});setTimeout(()=>e.target.classList.add('visible'),d);obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+    const sections=document.querySelectorAll('section[id]'),navLinks=document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id});navLinks.forEach(l=>{l.classList.remove('active','text-white');l.classList.add('text-zinc-400');if(l.getAttribute('href')==='#'+cur){l.classList.add('active','text-white');l.classList.remove('text-zinc-400')}})});
+    const nav=document.querySelector('nav');
+    window.addEventListener('scroll',()=>{if(window.scrollY>50){nav.style.background='rgba(9,9,11,.95)';nav.style.borderBottomColor='rgba(255,255,255,.08)'}else{nav.style.background='rgba(9,9,11,.8)';nav.style.borderBottomColor='rgba(255,255,255,.05)'}});
+  </script>
+</body>
+</html>
